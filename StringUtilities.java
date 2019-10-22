@@ -22,30 +22,33 @@ public class StringUtilities {
      * @return identical string with characters in opposite order
      */
     public String reverse(String valueToBeReversed) {
-
-       valueToBeReversed = ""; 
-  
-        String reversed = valueToBeReversed; 
-  
-        String result = reverse(valueToBeReversed);
-    
-    return result;
-
+        StringBuilder str = new StringBuilder(valueToBeReversed);
+        return String.valueOf(str.reverse());
 }
     
    
-   
-
-    
-
 
     /**
      * @param word word to get middle character of
      * @return middle character of `word`
      */
     public Character getMiddleCharacter(String word) {
-      return null;
-    }
+     word = 
+        char mid = word.length()/2; 
+     char mid1 = word.length/2 - 1;
+    if (mid % 2 == 0){
+    return mid;
+}
+    else {
+    
+   
+}
+   return mid1;
+
+}
+
+    
+
         
     
     
@@ -56,7 +59,8 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        return null;
+       
+        return value.replace(charToRemove.toString(), "");
     }
 
     /**
@@ -64,6 +68,7 @@ public class StringUtilities {
      * @return last `word` in sentence
      */
     public String getLastWord(String sentence) {
-        return null;
+       String[]sentence1 = sentence.split(" ");
+        return sentence1[sentence1.length-1];
     }
 }

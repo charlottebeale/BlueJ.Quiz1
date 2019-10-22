@@ -24,7 +24,12 @@ public class LoopFun
        * @return Upper case string of the first letter of each word
        */
       public String acronym(String phrase) {
-        return null;
+        String result = "";
+        String[]phrase1 = phrase.split(" ");
+        for(int i = 0; i < phrase1.length; i++) {
+            result += Character.toString(phrase1[i].charAt(0)).toUpperCase();
+        }
+            return result;
     }
 
     
