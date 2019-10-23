@@ -24,7 +24,7 @@ public class StringUtilities {
     public String reverse(String valueToBeReversed) {
         StringBuilder str = new StringBuilder(valueToBeReversed);
         return String.valueOf(str.reverse());
-}
+    }
     
    
 
@@ -33,23 +33,13 @@ public class StringUtilities {
      * @return middle character of `word`
      */
     public Character getMiddleCharacter(String word) {
-     word = 
-        char mid = word.length()/2; 
-     char mid1 = word.length/2 - 1;
-    if (mid % 2 == 0){
-    return mid;
-}
-    else {
-    
-   
-}
-   return mid1;
-
-}
+     int mid = word.length()/2;
+     
+       return word.charAt(mid);
+    }
 
     
 
-        
     
     
 
